@@ -5,14 +5,718 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="fonts/fontsFamily/font-family.css">
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="styles/css.css">
     <script src="js/jQuery-3.3.1.js"></script>
+    <script src="bootstrap/js/bootstrap.bundle.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <title>test_2</title>
+    <title>Reelwood</title>
 </head>
 <body>
-    
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header_logo_text col-lg-5 d-flex justify-content-center align-items-center ">
+                    <img src="./images/logo.png" alt="logo">
+                    <h1>Производство и продажа отделочных
+                        материалов из натурального дерева</h1>
+                </div>
+                <div class="header_num_icon col-lg-7 d-flex justify-content-center align-items-center ">
+                    <div> <span>(926) 779-79-74</span>   (495) 940-76-99  |  s-leswood@ya.ru</div>
+                    <img src="./images/blocknote-icon.png" alt="blocknote-icon">
+                    <img src="./images/phone-icon.png" alt="phone-icon">
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <!-- секция меню -->
+    <section class="section_menu container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-light container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Продукция <span class="sr-only">(current)</span></a>
+                            <div class="menu_green_line"></div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Цены</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Фотогалерея</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Статьи</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Где купить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control " type="search" placeholder="" aria-label="Search">
+                        <i class="fa fa-search" aria-hidden="true"></i>
+                    </form>
+                </div>
+            </nav>
+    </section>
+
+    <!-- Секция примеры работ -->
+    <section class="section_examples">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <a href="#">
+                        <img src="./images/examples-big.png" alt="examples-big">
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <a href="#">
+                        <span>До</span>
+                        <img src="./images/examples-min.png" alt="examples-min">
+                    </a>
+                    <a href="#">
+                        <span>Во время</span>
+                        <img src="./images/examples-min.png" alt="examples-min">
+                    </a>
+                    <a href="#">
+                        <span>После</span>
+                        <img src="./images/examples-min.png" alt="examples-min">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Секция каталог -->
+    <section class="section_catalog">
+        <div class="container">
+            <div class="row">
+                <div class="catalog_head col-lg-12">
+                    <h2>Наша продукция</h2>
+                    <a class="empty_green_btn" href="#">Перейти в каталог</a>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="catalog_square">
+                        <div class="catalog_square_grey">
+                            <div class="catalog_square_circle_green justify-content-center d-flex align-items-center">
+                                <img class="catalog_icon_green" src="./images/icon wood-1.png" alt="icon green wood">
+                                <img class="catalog_icon_white" src="./images/icon-white-wood.png" alt="icon white wood">
+                            </div>
+                        </div>
+                        <h3 class="text-center">Напольные покрытия</h3>
+                        <span class="text-center">Половая и паркетная доска, палубная и терассная доска</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="catalog_square">
+                        <div class="catalog_square_grey">
+                            <div class="catalog_square_circle_green justify-content-center d-flex align-items-center">
+                                <img src="./images/icon-wood-2.png" alt="icon green wood 2">
+                            </div>
+                        </div>
+                        <h3 class="text-center">Стеновые<br> изделия</h3>
+                        <span class="text-center">Евровагонка, имитация бруса, блок хаус, планкен</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="catalog_square">
+                        <div class="catalog_square_grey">
+                            <div class="catalog_square_circle_green justify-content-center d-flex align-items-center">
+                                <img src="./images/icon-sun.png" alt="icon sun">
+                            </div>
+                        </div>
+                        <h3 class="text-center">Наружная<br> отделка</h3>
+                        <span class="text-center">Имитация бруса, вагонка штиль</span>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="catalog_square">
+                        <div class="catalog_square_grey">
+                            <div class="catalog_square_circle_green justify-content-center d-flex align-items-center">
+                                <img src="./images/icon-thermometr.png" alt="icon thermometr">
+                            </div>
+                        </div>
+                        <h3 class="text-center ">Термодревесина</h3>
+                        <span class="text-center ">Вагонка для отделки бани и сауны</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+<!-- Секция спецпредложения -->
+    <section class="section_offers">
+        <div class="container">
+            <div class="row">
+                <div class="offers_head col-lg-12">
+                    <h2>Спецпредложения</h2>
+                    <a class="empty_green_btn" href="#">Все спецпредложения</a>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-25<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-1.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Массивная паркетная доска 
+                                    из отменных сортов дуба</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    433 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-30<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-2.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Паркетная евродоска 1 класса</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    1500 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>2546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-25<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-3.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Массивная паркетная доска 
+                                    из отменных сортов дуба</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    433 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-30<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-4.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Паркетная евродоска 1 класса</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    1433 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>1546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-25<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-5.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Массивная паркетная доска 
+                                    из отменных сортов дуба</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    433 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-30<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-1.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Паркетная евродоска 1 класса</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    1433 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>1546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-25<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-1.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Массивная паркетная доска 
+                                    из отменных сортов дуба</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    433 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="offers_square">
+                        <div class="offers_square_img">
+                            <span class="offers_square_img_text_sale">-30<sup>%</sup> </span>
+                            <a href="#"><img src="./images/special offers-1.png" alt="special offers"></a>
+                        </div>
+                        <div class="offers_square_description">
+                            <span class="offers_square_description_text">Паркетная евродоска 1 класса</span>
+                            <div class="offers_square_description_price">
+                                <span class="offers_square_description_price_true">
+                                    1500 руб/м<sup>2</sup>
+                                </span>
+                                <span class="offers_square_description_price_false">
+                                    <s>1546 руб/м</s><sup>2</sup>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- секция партнеры -->
+    <section class="section_partner">
+        <div class="container">
+            <div class="row">
+                <div class="partner_head col-lg-12">
+                    <h2>Reelwood это</h2>
+                    <a class="empty_green_btn" href="#">Станьте нашим партнёром</a>
+                </div>
+                <div class="partner_block col-lg-3">
+                    <div class="partner_block_hover">
+                        <div class="justify-content-center d-flex">
+                            <a href="#"><img src="./images/icon-partners-1.png" alt="icon-partners-1"></a>
+                        </div>
+                        <h4 class="text-center">Команда профессионалов</h4>
+                    </div>
+                    <span class="text-center d-flex">более 10 лет на рынке пиломатериалов</span>
+                </div>
+                <div class="partner_block col-lg-3">
+                    <div class="partner_block_hover">
+                        <div class="justify-content-center d-flex">
+                            <a href="#"><img src="./images/icon-partners-2.png" alt="icon-partners-2"></a>
+                        </div>
+                        <h4 class="text-center">Сеть заводов по всей России</h4>
+                    </div>
+                    <span class="text-center d-flex">мы работаем во всех регионах России без задержек на доставку и транспортировку</span>
+                </div>
+                <div class="partner_block col-lg-3">
+                    <div class="partner_block_hover">
+                        <div class="justify-content-center d-flex">
+                            <a href="#"><img src="./images/icon-partners-3.png" alt="icon-partners-3"></a>
+                        </div>
+                        <h4 class="text-center">500 м<sup>3</sup> леса
+                                на складе</h4>
+                    </div>
+                    <span class="text-center d-flex">Мы готовы выполнить заказ любого объема 
+                            в кратчайшие сроки</span>
+                </div>
+                <div class="partner_block col-lg-3">
+                    <div class="partner_block_hover">
+                        <div class="justify-content-center d-flex">
+                            <a href="#"><img src="./images/icon-partners-4.png" alt="icon-partners-4"></a>
+                        </div>
+                        <h4 class="text-center">Низкие<br> цены</h4>
+                    </div>
+                    <span class="text-center d-flex">Покупая у нас, вы не платите посредникам</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- секция лидеры продаж -->
+    <section class="section_sales-leaders">
+        <div class="container">
+            <div class="row">
+                <div class="sales-leaders_head col-lg-12">
+                    <h2>Лидеры продаж</h2>
+                    <a class="empty_green_btn" href="#">Перейти в каталог</a>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="sales-leaders_square">
+                        <a href="#"><img src="./images/Sales leaders-1.png" alt="Sales leaders-1"></a>
+                        <div class="sales-leaders_square_text">
+                            <span class="sales-leaders_square_price">от 433 руб/м<sup>2</sup></span>
+                            <h4 class="sales-leaders_square_model">Массивная паркетная доска</h4>
+                            <p class="sales-leaders_square_description">
+                                Массивная паркетная доска из отменных сортов дуба долго сохраняет свой цвет
+                            </p>
+                        </div>
+                        <a class="green_btn" href="#">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="sales-leaders_square">
+                        <a href="#"><img src="./images/Sales leaders-2.png" alt="Sales leaders-2"></a>
+                        <div class="sales-leaders_square_text">
+                            <span class="sales-leaders_square_price">от 433 руб/м<sup>2</sup></span>
+                            <h4 class="sales-leaders_square_model">Массивная паркетная доска</h4>
+                            <p class="sales-leaders_square_description">
+                                Массивная паркетная доска из отменных сортов дуба долго сохраняет свой цвет
+                            </p>
+                        </div>
+                        <a class="green_btn" href="#">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="sales-leaders_square">
+                        <a href="#"><img src="./images/Sales leaders-3.png" alt="Sales leaders-3"></a>
+                        <div class="sales-leaders_square_text">
+                            <span class="sales-leaders_square_price">от 433 руб/м<sup>2</sup></span>
+                            <h4 class="sales-leaders_square_model">Массивная паркетная доска</h4>
+                            <p class="sales-leaders_square_description">
+                                Массивная паркетная доска из отменных сортов дуба долго сохраняет свой цвет
+                            </p>
+                        </div>
+                        <a class="green_btn" href="#">Узнать подробнее</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="sales-leaders_square">
+                        <a href="#"><img src="./images/Sales leaders-4.png" alt="Sales leaders-4"></a>
+                        <div class="sales-leaders_square_text">
+                            <span class="sales-leaders_square_price">от 433 руб/м<sup>2</sup></span>
+                            <h4 class="sales-leaders_square_model">Массивная паркетная доска</h4>
+                            <p class="sales-leaders_square_description">
+                                Массивная паркетная доска из отменных сортов дуба долго сохраняет свой цвет
+                            </p>
+                        </div>
+                        <a class="green_btn" href="#">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция выбор материала -->
+    <section class="section_material_choice">
+        <div class="container">
+            <form class="row" action="formdata" method="post" name="form1">
+                <div class="material_choice_head col-lg-12">
+                    <h3>Уютный и комфортный дом это не так дорого. Убедитесь сами:</h3>
+                    <p>Выбор материала:</p>
+                </div>
+
+                <div class="col-lg-3 ">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown w-100 justify-content-between d-flex align-items-center" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Выберете пиломатериал
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+                   
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown w-100 justify-content-between d-flex align-items-center" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Длина
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown w-100 justify-content-between d-flex align-items-center" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Выберете сорт
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown w-100 justify-content-between d-flex align-items-center" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ширина
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material_choice_price col-lg-6">
+                    <p>15 756 ₽</p>
+                </div>
+
+                <div class="material_choice_area col-lg-6">
+                    <p>Укажите площадь помещения:</p>
+                </div>
+
+                <div class="col-lg-6">
+                    <button type="submit" class="btn green_btn">Заказать подробный расчёт</button>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown w-100 justify-content-between d-flex align-items-center" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Длина
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="dropdown ">
+                        <button class="btn btn-secondary dropdown w-100 justify-content-between d-flex align-items-center" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Ширина
+                            <i class="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Секция Галерея выполненых работ -->
+    <section class="section_gallery">
+        <div class="container">
+            <div class="row">
+                <div class="gallery_head col-lg-12">
+                    <h2>Галерея выполненных работ</h2>
+                </div>
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/img-gallery-1.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption  d-md-block col-lg-5 text-left">
+                                <h5>Пол в этой городской квартире 
+                                    был отделан массивной паркетной 
+                                    доской из дуба.</h5>
+                                <p>Материал:   ............15 000 ₽</p> 
+                                <p>Доставка:   ..............1 500 ₽</p>        
+                                <p>Монтаж:   ................7 500 ₽</p>
+                                <a class="green_btn" href="#">Посмотреть все работы</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./images/background_payment.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption  d-md-block col-lg-5 text-left">
+                                <h5>Пол в этой городской квартире 
+                                    был отделан массивной паркетной. 
+                                </h5>
+                                <p>Материал:   ............10 000 ₽</p> 
+                                <p>Доставка:   ..............1 900 ₽</p>        
+                                <p>Монтаж:   ................5 500 ₽</p>
+                                <a class="green_btn" href="#">Посмотреть все работы</a>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="./images/examples-big.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption  d-md-block col-lg-5 text-left">
+                                <h5>Пол в этой городской квартире.</h5>
+                                <p>Материал:   ............12 000 ₽</p> 
+                                <p>Доставка:   ..............3 500 ₽</p>        
+                                <p>Монтаж:   ................4 500 ₽</p>
+                                <a class="green_btn" href="#">Посмотреть все работы</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_map">
+        <div class="container">
+            <div class="row">
+                <div class="map_head col-lg-12">
+                    <h2>Наши заводы</h2>
+                    <h2>Полезное от REALWOOD</h2>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="map">
+                        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad7b5f7c5e75c42d81fa95fe76fa650ea3f36ece68ed5bc7622a9a74adc983636&amp;width=630&amp;height=467&amp;lang=ru_RU&amp;scroll=true"></script>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="map_useful d-flex justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./images/useful-1.png" alt="">
+                        </a>
+                        <div class="map_useful_text">
+                            <h4>Зимняя древесина для пиломатериалов</h4>
+                            <p>
+                                Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="map_useful d-flex justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./images/useful-2.png" alt="">
+                        </a>
+                        <div class="map_useful_text">
+                            <h4>Блок-хаус – гарант качественной отделки</h4>
+                            <p>
+                                Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="map_useful d-flex justify-content-center align-items-center">
+                        <a href="#">
+                            <img src="./images/useful-3.png" alt="">
+                        </a>
+                        <div class="map_useful_text">
+                            <h4>Новые материалы для обработки </h4>
+                            <p>
+                                Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секция новости -->
+    <section class="section_news">
+        <div class="container">
+            <div class="row">
+                <div class="news_head col-lg-12">
+                    <h2>Новости</h2>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="news_block">
+                        <div class="news_block_date">
+                            <a href="#">2 июня 2015г.</a>
+                        </div>
+                        <h4>Офис-склад работает по субботам!</h4>
+                        <p>Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</p>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="news_block">
+                        <div class="news_block_date">
+                            <a href="#">2 июня 2015г.</a>
+                        </div>
+                        <h4>Повышение цен на продукцию с 1 мая 2015 года</h4>
+                        <p>Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="news_block">
+                        <div class="news_block_date">
+                            <a href="#">2 июня 2015г.</a>
+                        </div>
+                        <h4>Офис-склад работает по субботам!</h4>
+                        <p>Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3">
+                    <div class="news_block">
+                        <div class="news_block_date">
+                            <a href="#">2 июня 2015г.</a>
+                        </div>
+                        <h4>Повышение цен на продукцию с 1 мая 2015 года</h4>
+                        <p>Во времена Киевской Руси была традиция строить дома и бани из деревьев, срубленных зимой.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </section>
+
+    <section class="">
+        <div class="container">
+            <div class="row"></div>
+        </div>
+    </section>
+
+    <section class=""></section>
 </body>
 </html>

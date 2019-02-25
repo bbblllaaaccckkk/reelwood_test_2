@@ -67,7 +67,7 @@ gulp.task('bootstrap', function() {
 gulp.task('css', function(){
     return gulp.src('./app/styles/css.css')
     // .pipe(minifyCss()) // минифицирование css
-    .pipe(gulp.dest('build/css/'))
+    .pipe(gulp.dest('build/styles/'))
     .pipe(reload({stream: true}));
 
 });

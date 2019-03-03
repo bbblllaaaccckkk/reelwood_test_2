@@ -4,7 +4,6 @@ body *{
     font-family: $fontOpenSans;
     line-height: 1;
     font-size: 15px;
-
     box-sizing: border-box;
     
     .btn:focus, .btn:active, input:focus, .input:active {
@@ -52,7 +51,8 @@ body *{
         }
     }
 
-    .catalog_head,
+
+    .products_head,
     .offers_head,
     .partner_head,
     .sales-leaders_head,
@@ -60,7 +60,8 @@ body *{
     .map_head,
     .news_head,
     .gold_arms_head,
-    .wood_species_head {
+    .wood_species_head,
+    .hide_block_content_popular_head {
         display: flex;
         justify-content: space-between;
         padding-bottom: 25px;
@@ -70,18 +71,80 @@ body *{
             font-size: 25px;
         }
     }
+
+
+    // Общие стили для двух секций: Одна главная-"section_offers",   вторая видна на адаптиве-"hide_block_content_popular"
+    .offers_square {
+        border: 1px solid #e6e6e6;;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        display: flex;
+    
+        &:hover {
+            box-shadow: #d6d6d6 3px 3px 5px;
+            cursor: pointer;
+    
+            .offers_square_description_text {
+                color: $colorGreen;
+            }
+    
+            .offers_square_img {
+                
+                .offers_square_img_text_sale {
+                    font-size: 30px;
+                }
+            }  
+        }
+    
+    
+    
+        .offers_square_img {
+    
+            img {
+                width: 100%;
+            }
+    
+            .offers_square_img_text_sale {
+                background: $colorGreen;
+                color: white;
+                padding: 15px 8px;
+                position: absolute;
+                font-size: 20px;
+                font-family: $fontSansLight;
+                transition: 0.5s;
+            }
+        }
+    
+        .offers_square_description {
+            padding: 15px 20px;
+    
+            span {
+                line-height: 1.5em;
+            }
+    
+            .offers_square_description_price {
+                padding-top: 25px;
+                justify-content: space-between;
+                display: flex;
+                align-items: center;
+    
+                .offers_square_description_price_true {
+                    font-size: 20px;
+                    font-weight: 500;
+                }
+    
+                .offers_square_description_price_false {
+                    color: #999999;
+                }
+            }
+        }
+    }
+
 }
 
 
 
-.font-light {
-    font-family: $fontSansLight;
-}
-
-
-.font-bold {
-    font-family: $fontSansSemibold;
-}
 
 
 // Общие стили закончились
@@ -91,30 +154,35 @@ body *{
 
 #header {
 
-    img {
-        cursor: pointer;
-    }
-
     .header_logo_text {
 
         h1 {
             display: inline-block;
-            width: 300px;
+            min-width: 300px;
             margin-left: 25px;
+        }
+
+        img {
+            width: 115px;
         }
     }
     
     .header_num_icon {
+
         
         div {
             font-size: 19px;
             margin-right: 85px;
 
             span {
-                margin-right: 15px;
                 font-size: 19px;
             }
+
+            .header_num_icon_num {
+                margin-right: 15px;
+            }
         }
+        
 
         
         :nth-child(3) {
@@ -192,34 +260,34 @@ body *{
 
 
 
-// секция каталог-----------------------
-.section_catalog {
+// секция "Продукция"-----------------------
+.section_products {
     padding: 60px 0 50px 0;
 
-    .row :nth-child(2) > .catalog_square {
+    .row :nth-child(2) > .products_square {
         &:hover {
             background: url(../images/products.png);
             background-size: cover;
             color: white;
 
-            .catalog_square_grey {
+            .products_square_grey {
                 background: none;
                 display: flex;
                 align-items: center;
                 justify-content: center;
 
-                .catalog_square_circle_green {
+                .products_square_circle_green {
                     background: $colorGreen;
                     border-radius: 50%;
                     width: 80px;
                     height: 80px;
                                        
 
-                    .catalog_icon_green {
+                    .products_icon_green {
                         display: none;
                     }
 
-                    .catalog_icon_white {
+                    .products_icon_white {
                         display: block;
                         
                     }
@@ -233,7 +301,7 @@ body *{
         padding: 15px 0 25px 0;    
     }
 
-    .catalog_square {
+    .products_square {
         border: 1px solid #e6e6e6;;
         padding: 25px 20px;
         height: 100%;
@@ -246,13 +314,13 @@ body *{
 
         }
 
-        .catalog_square_grey {
+        .products_square_grey {
             background: #f2f2f2;
             padding: 35px 0;
             height: 105px;
             cursor: pointer;
 
-            .catalog_icon_white {
+            .products_icon_white {
                 display: none;
             }
         }
@@ -264,79 +332,20 @@ body *{
 
 // Секция "спецпредложения"
 .section_offers {
+    // основные стили находятся ввверху в body
     padding-bottom: 30px;
 
     .col-lg-3 {
         margin-bottom: 30px;
     }
 
-    .offers_square {
-        border: 1px solid #e6e6e6;;
-        height: 100%;
-        flex-direction: column;
-        justify-content: space-between;
-        display: flex;
-
-        &:hover {
-            box-shadow: #d6d6d6 3px 3px 5px;
-            cursor: pointer;
-
-            .offers_square_description_text {
-                color: $colorGreen;
-            }
-
-            .offers_square_img {
-                
-                .offers_square_img_text_sale {
-                    font-size: 30px;
-                }
-            }  
-        }
-
-
-
-        .offers_square_img {
-
-            img {
-                width: 100%;
-            }
-
-            .offers_square_img_text_sale {
-                background: $colorGreen;
-                color: white;
-                padding: 15px 8px;
-                position: absolute;
-                font-size: 20px;
-                font-family: $fontSansLight;
-                transition: 0.5s;
-            }
-        }
-
-        .offers_square_description {
-            padding: 15px 20px;
-
-            span {
-                line-height: 1.5em;
-            }
-
-            .offers_square_description_price {
-                padding-top: 25px;
-                justify-content: space-between;
-                display: flex;
-                align-items: center;
-
-                .offers_square_description_price_true {
-                    font-size: 20px;
-                    font-weight: 500;
-                }
-
-                .offers_square_description_price_false {
-                    color: #999999;
-                }
-            }
-        }
-    }
 }
+
+
+
+
+
+
 
 
 // Секция "Партнеры"
@@ -488,7 +497,7 @@ body *{
             }
     
             h5 {
-                padding: 55px 0 30px 0;
+                padding: 25px 0 30px 0;
                 line-height: 1.5em;
                 width: 335px;
             }
@@ -524,8 +533,6 @@ body *{
         }
 
         img {
-            width: 1140px !important;
-            height: 400px !important;
             padding: 0 15px;
         }
     }
@@ -807,7 +814,7 @@ body *{
     h5 {
         font-size: 20px;
         font-family: $fontSansSemibold;
-        margin-bottom: 40px;
+        margin: 20px 0 30px 0;
     }
 
     li {
@@ -822,4 +829,307 @@ body *{
     .link_address {
         line-height: 1.5em;
     }
+}
+
+
+
+// скрытое меню- отображается на адаптиве
+.section_hide_block {
+    // display: none;
+
+
+    // Блок с четырмя картинками
+    .hide_block_content_img {
+
+        .hide_block_content_img_facade {
+            flex: 1 0 45%;
+
+            .hide_block_img {
+                background: url(../images/img-desktop/facade-products.png) 70% 50% no-repeat;
+                background-position: top;
+                color: white;
+                padding: 20px 30px 5px 30px;
+
+                :nth-child(7) {
+                    margin-right: 10px;
+                }
+
+                h4 {
+                    font-size: 20px;
+                    line-height: 1.3em;
+                    padding-bottom: 23px;
+                }
+
+                span {
+                    display: inline-block;
+                    padding: 7px 10px;
+                    background: $colorGreen;
+                    margin: 5px 0;
+                }
+            }
+
+        }
+
+        .hide_block_content_img_floor {
+            flex: 1 0 55%;
+
+            .hide_block_img {
+                background: url(../images/img-desktop/for-floor.png);
+                background-size: cover;
+                height: 295px;
+
+                h4 {
+                    padding: 25px;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
+        }
+
+        .hide_block_content_img_stair {
+            
+
+            .hide_block_img {
+                background: url(../images/img-desktop/stair-elements.png);
+                background-size: cover;
+                height: 295px;
+                width: 294px;
+                margin-top: 30px;
+
+                h4 {
+                    padding: 25px;
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+
+        }
+
+        .hide_block_content_img_bath {
+
+            .hide_block_img {
+                background: url(../images/img-desktop/for-bath.png);
+                background-size: cover;
+                height: 295px;
+                margin-left: 24px;
+                margin-top: 30px;
+            }
+
+            h4 {
+                padding: 25px;
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+
+
+
+    // Блок "Популярное"
+    .hide_block_content_popular {
+        padding: 50px 0 30px 0;
+
+        .col-lg-4 {
+            margin-bottom: 30px;
+
+            .offers_square {
+
+                &:hover {
+                    .offers_square_img_text_sale {
+                        font-size: 24px;
+                    }
+                }
+
+                .offers_square_img_text_sale {
+                    font-size: 16px;
+                }
+
+                .offers_square_description_price {
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .offers_square_description_price_true {
+                        padding-bottom: 10px;
+                    }
+                }
+            }  
+        }
+    }
+
+
+
+
+    // Стили для меню слева
+    .hide_block_menu {
+        a:hover {
+            color: $colorGreen;
+        }
+        
+
+        .hide_block_menu_submenu_head {
+            
+            h3 {
+                font-size: 20px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid $colorGreen;
+            }
+
+            ul {
+                padding: 10px 0 50px 0;
+
+                li {
+                    padding-top: 20px;
+    
+                    // a:hover {
+                    //     color: $colorGreen;
+                    // }
+                }
+            }    
+        }
+
+
+        .hide_block_menu_submenu_drop {
+            padding-bottom: 10px;
+
+            h3 {
+                font-size: 17px;
+                background: #f2f2f2;
+                padding: 10px 15px;
+                margin-top: 20px;
+                border-top: 1px solid #e6e6e6;
+                border-right: 1px solid #e6e6e6;
+                border-left: 1px solid #e6e6e6;
+            }
+
+            .card {
+                border-radius: 0;
+            }
+
+            h5 {
+                padding: 3px 0;
+            }
+
+            .btn-link {
+                font-size: 14px;
+                color: black;
+            }
+
+            ul {
+                padding-bottom: 20px;
+
+                li {
+                    padding-bottom: 10px;
+
+                    &::before {
+                        content: "";
+                        width: 5px;
+                        height: 5px;
+                        background: $colorGreen;
+                        position: absolute;
+                        border-radius: 50%;
+                        margin-top: 7px;
+                        left: 22px;
+                    }
+
+                    a {
+                        font-size: 12px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            
+
+            .card-body {
+                padding: 0;
+                margin-left: 30px;
+                
+            }
+        }
+
+
+        
+
+
+
+
+
+    }
+
+    
+    
+        
+        
+    
+
+
+
+
+    
+
+}
+
+
+
+
+
+
+
+// Стили для адаптивности сайта:
+
+@media screen and ( max-width: 1199px ) {
+
+    #header {
+
+        .header_logo_text {
+            img {
+                margin-left: 55px;
+            }
+        }
+
+        .header_num_icon > div {
+            text-align: center;
+            margin-right: 0;
+
+            :nth-child(2) {
+                display: none;
+            }
+        }
+    }
+
+    .section_examples,
+    .section_products,
+    .section_offers,
+    .section_partner,
+    .section_sales-leaders,
+    .section_material_choice,
+    .section_gallery,
+    .section_map,
+    .section_news,
+    .section_gold_arms,
+    .section_wood_species {
+        display: none;
+    }
+
+    .section_hide_block {
+        display: block;
+    }
+
+    #footer {
+        .footer_block {
+            margin-left: 0;
+
+            h5 {
+                font-size: 16px;
+            }
+            
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
+
+
 }

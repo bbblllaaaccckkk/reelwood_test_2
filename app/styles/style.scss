@@ -51,6 +51,10 @@ body *{
         }
     }
 
+    .form-control {
+        border: 1px solid transparent;
+    }
+
 
     .products_head,
     .offers_head,
@@ -140,11 +144,7 @@ body *{
             }
         }
     }
-
 }
-
-
-
 
 
 // Общие стили закончились
@@ -168,7 +168,6 @@ body *{
     }
     
     .header_num_icon {
-
         
         div {
             font-size: 19px;
@@ -183,7 +182,6 @@ body *{
             }
         }
         
-
         
         :nth-child(3) {
             margin-left: 30px;
@@ -193,11 +191,10 @@ body *{
 
 
 
-// секция меню----------------------------------------------------
+// секция главное меню----------------------------------------------------
 .section_menu {
     margin: 15px 0 40px 0;
-    background: #e6e6e6;
-    
+    background: #e6e6e6;  
 
     .navbar {
         padding-left: 25px;
@@ -227,8 +224,7 @@ body *{
         .form-control {
             height: 25px;
             width: 180px;
-            border-radius: 2px;
-            
+            border-radius: 2px;   
         }
 
         .fa-search {
@@ -280,16 +276,14 @@ body *{
                     background: $colorGreen;
                     border-radius: 50%;
                     width: 80px;
-                    height: 80px;
-                                       
+                    height: 80px;                      
 
                     .products_icon_green {
                         display: none;
                     }
 
                     .products_icon_white {
-                        display: block;
-                        
+                        display: block;   
                     }
                 }
             }
@@ -311,7 +305,6 @@ body *{
 
         span {
             line-height: 1.5em;
-
         }
 
         .products_square_grey {
@@ -340,9 +333,6 @@ body *{
     }
 
 }
-
-
-
 
 
 
@@ -382,11 +372,16 @@ body *{
 }
 
 
+
 //секция "Лидеры продаж"
 .section_sales-leaders {
     padding: 50px 0 60px 0;
 
     .sales-leaders_square {
+
+        img {
+            width: 100%;
+        }
 
         .sales-leaders_square_text {
             padding: 30px 0 40px 0;
@@ -410,10 +405,13 @@ body *{
 }
 
 
+
 // Секция "выбор материала"
 .section_material_choice {
     color: white;
     background: url(../images/background_payment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 50px 0 30px 0;
 
     .material_choice_head {
@@ -566,7 +564,7 @@ body *{
             border-top: 20px solid $colorGreen; 
             left: 0;
             bottom: -25px;
-            }
+        }
         
 
         span {
@@ -574,7 +572,6 @@ body *{
         }
     }
 
-    
 
     .map_useful {
         padding-bottom: 30px;
@@ -583,7 +580,6 @@ body *{
             display: flex;
             flex-direction: column;
             margin-left: 30px;
-            
             
             h4 {
                 font-size: 20px;
@@ -597,6 +593,7 @@ body *{
         }
     }
 }
+
 
 
 // Секция "Новости"
@@ -727,8 +724,6 @@ body *{
         position: relative;
         cursor: pointer;
         
-
-        
         .wood_species_square_block_front {
     
             h5 {
@@ -744,8 +739,7 @@ body *{
             width: 100%;
             height: 100%;
             display: none;
-            color: white;
-            
+            color: white;    
 
             .wood_species_square_block_back_circle {
                 background: #ada8a7;
@@ -792,6 +786,8 @@ body *{
     }  
 }
 
+
+
 // Секция "Футер"
 #footer {
     background: #998658;
@@ -835,8 +831,7 @@ body *{
 
 // скрытое меню- отображается на адаптиве
 .section_hide_block {
-    // display: none;
-
+    display: none;
 
     // Блок с четырмя картинками
     .hide_block_content_img {
@@ -874,52 +869,79 @@ body *{
             flex: 1 0 55%;
 
             .hide_block_img {
-                background: url(../images/img-desktop/for-floor.png);
-                background-size: cover;
+                background: #95b8b6;
                 height: 295px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 h4 {
                     padding: 25px;
                     font-size: 20px;
                     color: white;
                 }
-            }
 
+                div {
+                    padding-bottom: 40px;
+
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
         }
 
         .hide_block_content_img_stair {
-            
 
             .hide_block_img {
-                background: url(../images/img-desktop/stair-elements.png);
-                background-size: cover;
+                background: #b7b895;
                 height: 295px;
                 width: 294px;
                 margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
 
                 h4 {
                     padding: 25px;
                     font-size: 20px;
                     color: white;
                 }
-            }
 
+                div {
+                    padding-bottom: 30px;
+
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
         }
 
         .hide_block_content_img_bath {
 
             .hide_block_img {
-                background: url(../images/img-desktop/for-bath.png);
-                background-size: cover;
+                background: #b89289;
                 height: 295px;
                 margin-left: 24px;
                 margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
             }
 
             h4 {
                 padding: 25px;
                 font-size: 20px;
                 color: white;
+            }
+
+            div {
+                padding-bottom: 15px;
+
+                img {
+                    width: 200px;
+                }
             }
         }
     }
@@ -962,10 +984,10 @@ body *{
 
     // Стили для меню слева
     .hide_block_menu {
+
         a:hover {
             color: $colorGreen;
         }
-        
 
         .hide_block_menu_submenu_head {
             
@@ -980,10 +1002,6 @@ body *{
 
                 li {
                     padding-top: 20px;
-    
-                    // a:hover {
-                    //     color: $colorGreen;
-                    // }
                 }
             }    
         }
@@ -1029,17 +1047,14 @@ body *{
                         position: absolute;
                         border-radius: 50%;
                         margin-top: 7px;
-                        left: 22px;
+                        left: 18px;
                     }
 
                     a {
                         font-size: 12px;
-                        margin-left: 5px;
                     }
                 }
             }
-
-            
 
             .card-body {
                 padding: 0;
@@ -1047,31 +1062,8 @@ body *{
                 
             }
         }
-
-
-        
-
-
-
-
-
     }
-
-    
-    
-        
-        
-    
-
-
-
-
-    
-
 }
-
-
-
 
 
 
@@ -1114,7 +1106,18 @@ body *{
 
     .section_hide_block {
         display: block;
+
+        .hide_block_content_popular {
+
+            :nth-child(5) > .offers_square > .offers_square_img {
+
+                .offers_square_img_text_sale {
+                    display: none;
+                }
+            }
+        }
     }
+
 
     #footer {
         .footer_block {
@@ -1123,13 +1126,598 @@ body *{
             h5 {
                 font-size: 16px;
             }
+
+            li {
+                margin-top: 20px;
+            }
             
             a {
                 font-size: 12px;
             }
         }
     }
+}
 
 
 
+@media screen and (max-width: 991px) {
+
+    #header {
+
+        .header_num_icon > div {
+            margin-right: 60px;
+        }
+
+        .header_logo_text {
+            justify-content: start !important;
+
+            a {
+                img {
+                    margin-left: 0;
+                }
+            }
+
+            h1 {
+                display: none;
+            }
+        }
+    }
+
+
+    // секция главное меню
+    .section_menu {
+
+        .navbar {
+            padding-top: 0;
+            padding-bottom: 0;
+
+            .nav-item {
+                margin-right: 20px;
+                margin-bottom: 0.5rem;
+    
+                .nav-link {
+                    font-size: 14px;
+                }
+            }
+
+            .form-control {
+                width: 120px;
+            }
+        } 
+    }
+
+
+    .section_hide_block {
+
+        .hide_block_content {
+
+            .hide_block_content_img_facade {
+                position: absolute;
+
+                h4 {
+                    margin-bottom: 86px;
+                }
+            }
+
+            .hide_block_content_img_floor {
+                margin-left: 240px;
+
+                .hide_block_img {
+                    height: 221px;
+
+                    div {
+                        padding-bottom: 15px;
+
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+
+            .hide_block_content_img_stair {
+                margin-left: 240px;
+
+                .hide_block_img {
+                    width: auto;
+                    height: 221px;
+
+                    div {
+                        padding-bottom: 15px;
+
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+
+            .hide_block_content_img_bath {
+
+                .hide_block_img {
+                    margin-left: 0;
+                }
+            }
+
+            .hide_block_content_popular {
+
+                :nth-child(8),
+                :nth-child(9),
+                :nth-child(10) {
+                    display: none;
+                }
+
+                :nth-child(5) > .offers_square > .offers_square_img {
+
+                    .offers_square_img_text_sale {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+
+    #footer {
+        padding: 30px 0;
+
+        .footer_block {
+
+            h5 {
+                margin: 10px 0 20px 0;
+            }
+
+            li {
+                margin-top: 10px;
+            }
+
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-top: 15px;
+
+                ul {
+
+                    li {
+                        margin-top: 0;
+                    }
+                }
+            }
+
+            .link_email {
+                margin: 15px 0;
+            }   
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    #header {
+
+        .header_logo_text {
+            justify-content: center !important;
+            padding: 20px;
+            
+            a {
+                img {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .header_num_icon {
+
+            div {
+                margin-right: 0;
+            }
+            
+            a {
+                display: none;
+            }
+        }
+    }
+
+
+
+    // Секция "Выпадающее меню сверху"
+    .section_menu {
+        padding: 10px 0;
+
+        .navbar {
+            .form-inline {
+                display: none;
+            }
+
+            .navbar-toggler {
+                border: none;
+            }
+    
+            .nav-item {
+                margin-right: 0;
+                justify-content: center;
+                display: flex;
+                padding: 2px 5px;
+    
+                .nav-link {
+                    position: relative;
+    
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 100%;
+                        background: $colorGreen;
+                        bottom: -5px;
+                        left: 0;
+                        z-index: -1;
+                    }
+
+                    &:hover {
+
+                        &::after {
+                            z-index: 1;
+                        }
+                    }
+                }
+                
+    
+                .menu_green_line {
+                    display: none;
+                }
+            }
+        }   
+    }
+
+    
+
+    //Секция "Скрытая, видна только на адаптиве"
+    .section_hide_block {
+
+        .hide_block_menu {
+
+            .hide_block_menu_submenu_head {
+
+                h3 {
+                    font-size: 17px;
+                }
+            }
+
+            .hide_block_menu_submenu_drop {
+
+                h3 {
+                    font-size: 16px;
+                }
+
+                .btn-link {
+                    font-size: 13px;
+                    text-align: left;
+                }
+            }
+        }
+
+
+        //Секция с "четырмя картинками"
+        .hide_block_content {
+
+            .hide_block_content_img_facade {
+                position: relative;
+                margin-bottom: 30px;
+
+                h4 {
+                    margin-bottom: 0;
+                }
+            }
+
+            .hide_block_content_img_floor {
+                margin-left: 0;
+            }
+
+            .hide_block_content_img_stair {
+                margin-left: 0;
+            }
+
+            .hide_block_content_img_bath {
+                
+                .hide_block_img {
+                    height: 225px;
+
+                    h4 {
+                        padding-bottom: 0;
+                    }
+
+                    div {
+                        padding-top: 10px;
+                        padding-bottom: 0;
+
+                        img {
+                            width: 150px;
+                        }
+                    }
+                }
+            }
+        }
+
+        // Блок с товаром "Популярное"
+        .hide_block_content_popular {
+
+            .hide_block_content_popular_head {
+                display: block;
+
+                h2 {
+                    text-align: center;
+                    padding-bottom: 20px;
+                }
+
+                .empty_green_btn {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+
+            :nth-child(4),
+            :nth-child(5),
+            :nth-child(6),
+            :nth-child(7) {
+                display: none;
+            }
+        }
+    }
+    
+
+    #footer {
+
+        .footer_block {
+
+            img {
+                padding-top: 20px;
+            }
+
+            div {
+                flex-direction: row;
+
+                ul {
+                    :nth-child(1) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 575px) {
+
+    .section_hide_block {
+
+        .hide_block_content {
+
+            .hide_block_content_img_facade {
+
+                .hide_block_img {
+                    padding-bottom: 10px;
+                    
+                    span {
+                        margin-right: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 532px) {
+
+    body *{
+        font-size: 12px;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_drop .btn-link {
+        font-size: 10px;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_drop h3 {
+        font-size: 12px;
+    }
+
+    .section_hide_block .hide_block_content_img {
+
+        .hide_block_content_img_facade,
+        .hide_block_content_img_floor,
+        .hide_block_content_img_stair,
+        .hide_block_content_img_bath {
+
+            .hide_block_img  {
+
+                h4 {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .section_hide_block .hide_block_content_popular .hide_block_content_popular_head h2 {
+        font-size: 20px;
+    }
+    
+}
+
+
+
+@media screen and (max-width: 442px) {
+
+    body *{
+        font-size: 10px;
+    }
+
+    body * .offers_square .offers_square_description .offers_square_description_price {
+        padding-top: 15px;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_drop .btn-link {
+        font-size: 8px;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_drop h3 {
+        font-size: 10px;
+    }
+
+    .section_hide_block .hide_block_content_img {
+
+        .hide_block_content_img_facade,
+        .hide_block_content_img_floor,
+        .hide_block_content_img_stair,
+        .hide_block_content_img_bath {
+
+            .hide_block_img  {
+
+                h4 {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .section_hide_block .hide_block_content_popular .hide_block_content_popular_head h2 {
+        font-size: 18px;
+    }
+
+    body * .offers_square .offers_square_description .offers_square_description_price .offers_square_description_price_true {
+        font-size: 16px;
+    }
+
+    .section_hide_block .hide_block_content_popular {
+        padding-top: 30px;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_head ul {
+        padding-bottom:30px;
+    }
+
+    #footer {
+
+        .col-4 {
+            flex: 1 0 50.333%;
+            max-width: 45.333%;
+        }
+
+        .row {
+
+            :nth-child(3) > .footer_block {
+                padding-top: 50px;
+
+                h5 {
+                    margin-bottom: 12px;
+                }
+            }
+
+            :nth-child(4) > .footer_block {
+                
+                div {
+                    flex-direction: column;
+
+                    ul :nth-child(1) {
+                        margin-bottom: 2px;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+
+
+@media screen and (max-width: 382px) {
+
+    body *{
+        font-size: 8px;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_drop .btn-link {
+        padding-right: 0;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_drop h3 {
+        font-size: 8px;
+    }
+}
+
+
+
+@media screen and (max-width: 355px) {
+
+    .section_hide_block .hide_block_content .hide_block_content_img_floor .hide_block_img div img {
+        width: 120px;
+    }
+
+    .section_hide_block .hide_block_content .hide_block_content_img_stair .hide_block_img div img {
+        width: 120px;
+    }
+
+    .section_hide_block .hide_block_content .hide_block_content_img_bath .hide_block_img div img {
+        width: 120px;
+    }
+
+    .section_hide_block .hide_block_menu .hide_block_menu_submenu_head h3 {
+        font-size: 14px;
+    }
+
+    .section_hide_block .hide_block_content_img {
+
+        .hide_block_content_img_facade,
+        .hide_block_content_img_floor,
+        .hide_block_content_img_stair,
+        .hide_block_content_img_bath {
+
+            .hide_block_img  {
+
+                h4 {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .section_hide_block .hide_block_content_popular .hide_block_content_popular_head h2 {
+        font-size: 16px;
+    }
+
+    body * .offers_square .offers_square_description .offers_square_description_price .offers_square_description_price_true {
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 349px) {
+
+    .section_hide_block .hide_block_content .hide_block_content_img_facade .hide_block_img span {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 325px) {
+    
+    #header .header_num_icon div {
+        font-size: 16px;
+    }
+
+    #header .header_num_icon div span {
+        font-size: 16px;
+    }
+
+    .section_hide_block .hide_block_content_popular .col-lg-4 .offers_square .offers_square_img_text_sale {
+        font-size: 12px;
+    }
+
+    .section_hide_block .hide_block_content_popular .col-lg-4 .offers_square:hover .offers_square_img_text_sale {
+        font-size: 16px;
+    }
 }
